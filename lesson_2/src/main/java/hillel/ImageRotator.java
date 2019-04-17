@@ -37,6 +37,11 @@ public class ImageRotator
     {
         int n=a.length;
         int temp;
+
+        if(a.length != a[0].length)
+        {
+            return;
+        }
         
         for(int i=0; i<n; i++)
         {
