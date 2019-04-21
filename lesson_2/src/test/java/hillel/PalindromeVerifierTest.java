@@ -1,24 +1,27 @@
- package hillel;
+package hillel;
 
- import static org.junit.Assert.*;
- import org.junit.Test;
+import static org.junit.Assert.*;
 
- public class PalindromeVerifierTest
- {
+import org.junit.Test;
 
-    @Test
-    public void testPositive()
-    {
-        
-        assertTrue(PalindromeVerifier.verify("А роза упала на лапу Азора"));
-        assertTrue(PalindromeVerifier.verify("abcba"));
-   }
+public class PalindromeVerifierTest
+{
 
-    @Test
-    public void testNegative()
-    {
+  @Test
+  public void testPositive()
+  {
 
-        assertFalse(PalindromeVerifier.verify("А роза упала на лапы Азора"));
-        assertFalse(PalindromeVerifier.verify("abcab"));
-   }
- }
+    assertTrue(PalindromeVerifier.verify("А роза упала на лапу Азора"));
+    assertTrue(PalindromeVerifier.verify("abcba"));
+    assertTrue(PalindromeVerifier.verify("abccba"));
+  }
+
+  @Test
+  public void testNegative()
+  {
+
+    assertFalse(PalindromeVerifier.verify("А роза упала на лапы Азора"));
+    assertFalse(PalindromeVerifier.verify("abcab"));
+    assertFalse(PalindromeVerifier.verify("abcabc"));
+  }
+}
