@@ -17,7 +17,7 @@ public class Circle extends Point
 
   public double getSquare()
   {
-    return Math.PI*Math.pow(radius, 2);
+    return Math.PI * Math.pow(radius, 2);
   }
 
   @Override

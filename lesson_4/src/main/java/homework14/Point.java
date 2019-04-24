@@ -7,8 +7,8 @@ public class Point
 
   public Point(double x, double y)
   {
-    this.coordX=x;
-    this.coordY=y;
+    this.coordX = x;
+    this.coordY = y;
   }
 
   public double getCoordX()
